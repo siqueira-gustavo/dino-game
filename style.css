@@ -1,0 +1,46 @@
+body {
+  background: #fafafa; /* Old browsers */
+}
+
+.dino {
+  position: absolute; /* Posição absoluta independente do resto da página */
+  bottom: 0; /* Posição do conteúdo na página */
+  background-image: url(dino.png); /* Imagem do dino */
+  width: 60px; /* Largura do dino */
+  height: 60px; /* Altura do dino */
+}
+
+.cactus {
+  position: absolute; /* Posição absoluta independente do resto da página */
+  width: 60px; /* Largura do cacto */
+  height: 60px; /* Altura do cacto */
+  bottom: 0; /* Posição do conteúdo na página */
+  background-image: url(cactus.png); /* Imagem do cacto */
+}
+
+.game-over {
+  text-align: center; /* Centraliza o texto */
+  color: #666; /* Cor do texto */
+  margin: 50px 0; /* Margem do texto */
+  font-family: arial; /* Fonte do texto */
+}
+
+@keyframes slideright { /* Animação do cacto */
+  from {
+      background-position: 70000%; /* Posição inicial do cacto */
+  }
+  to {
+      background-position: 0%; /* Posição final do cacto */
+  }
+}
+
+.background {
+  position: absolute; /* Posição absoluta independente do resto da página */
+  bottom: 0px; /* Posição do conteúdo na página */
+  background-image: url('background.png'); /* Imagem do fundo */
+  background-repeat: repeat-x; /* Repete a imagem horizontalmente */
+  animation: slideright 600s infinite linear; /* Animação do fundo */
+  -webkit-animation: slideright 600s infinite linear; /* Animação do fundo */
+  width: 100%; /* Largura do fundo */
+  height: 200px; /* Altura do fundo */
+}
